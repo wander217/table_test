@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <style>
+            td{
+                 /* chỉnh đường viền của từng ô */
+                 border: 1px solid black;
+            }
+
+            /* Chỉnh style cho head */
+            .order_head{
+                /* chỉnh độ rộng cho ô của bảng */
+                width: 100px; 
+                /* chỉnh đường viền của từng ô */
+                border: 1px solid black;
+                /* chỉnh màu cho ô */
+                background-color: aquamarine;
+            }
+
+            .fullname_head{
+                /* chỉnh độ rộng cho ô của bảng */
+                width: 200px; 
+                /* chỉnh màu cho ô */
+                background-color: bisque;
+            }
+
+            .img_head{
+                /* chỉnh độ rộng cho ô của bảng */
+                width: 200px; 
+                /* chỉnh màu cho ô */
+                background-color: chartreuse;
+            }
+
+            /* Chỉnh style cho từng cell */
+            .order{
+                /* chỉnh độ rộng cho ô của bảng */
+                width: 100px; 
+            }
+            .fullname{
+                /* chỉnh độ rộng cho ô của bảng */
+                width: 200px;
+                /* chỉnh vị trí trong ô - chỉnh vè vị trí cuối */
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+
+            .img {
+                 /* chỉnh độ rộng cho ô của bảng */
+                width: 200px;
+                /* chỉnh vị trí trong ô - chỉnh vè vị trí giữa */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .img img{
+                /* chỉnh kích thước của ảnh */
+                width: 100px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <td class="order_head">Số thứ tư</td>
+                    <td class="fullname_head">Họ và tên</td>
+                    <td class="img_head">Ảnh sinh viên</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- Phải để div vào trong vì nếu chỉnh td thì phần display của nó bị đổi -->
+                        <!-- dẫn đến hỏng display của bảng -->
+                        <div  class="order">
+                            1
+                        </div>
+                    </td>
+                    <td>
+                        <div class="fullname">
+                            Nguyễn Văn A
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img">
+                            <img src=".\img\img.jpg" alt="img">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div  class="order">
+                            2
+                        </div>
+                    </td>
+                    <td>
+                        <div class="fullname">
+                            Nguyễn Văn B
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img">
+                            <img src=".\img\img.jpg" alt="img">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div  class="order">
+                            3
+                        </div>
+                    </td>
+                    <td>
+                        <div class="fullname">
+                            Phạm Thị C
+                        </div>
+                    </td>
+                    <td>
+                        <div class="img">
+                            <img src=".\img\img.jpg" alt="img">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
